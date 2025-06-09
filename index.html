@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2048 on Embedded System – TI CC3200</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #343a40;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #343a40;
+    }
+    video {
+      width: 100%;
+      border-radius: 6px;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>2048 on Embedded System</h1>
+    <p>TI CC3200 + OLED + Sensors</p>
+  </header>
+
+  <main>
+    <h2>Project Demonstration</h2>
+    <!-- Replace demo.mp4 with your actual file name or link -->
+    <video controls>
+      <source src="demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>Project Description</h2>
+    <p>
+      This project implements the popular puzzle game <strong>2048</strong> on the
+      TI CC3200 embedded microcontroller. The game runs fully on-device, rendering
+      the board on an Adafruit SSD1351 OLED display and allowing input via either
+      UART or accelerometer-based tilt control.
+    </p>
+    <p>
+      Core features include:
+      <ul>
+        <li>Real-time tile movement and merging</li>
+        <li>Random tile spawning</li>
+        <li>OLED rendering with dynamic number formatting</li>
+        <li>Accelerometer tilt input handling with debounce logic</li>
+        <li>Post-game score submission to AWS IoT via HTTPS</li>
+      </ul>
+    </p>
+    <p>
+      Planned features like temperature-based tile coloring were scoped but not implemented due to hardware integration constraints.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 Arun Khanijau
+  </footer>
+</body>
+</html>
